@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>com.eduit.hibernate</groupId> <!--Este es una carpeta cuanodo genere lo pondra en esta carpeta que estara en repositorio local, guarda is jars mas lo que baje de internet -->
+  <artifactId>hibernate</artifactId> <!--Este es el nombre del proyecto el artifact -->
+  <packaging>jar</packaging> 
+  <version>1.0-SNAPSHOT</version><!--Version del jar, va a generar un archivo con este nombre 1.0-Snapshot.jar -->
+  <name>hibernate07</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies> <!--son las bibliotecas que necesita el proyecto para trabajar, va a internet y lo baja -->
+    <dependency> <!--las dependencias maven las baja de su repositorio https://mvnrepository.com/artifact/ -->
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId> <!--Cuando necesite una biblioteca voy al repository de maven busco el artifactId lo pego aca y listo -->
+      <version>4.3.10.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>4.3.10.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.javax.persistence</groupId> <!--esta es la implementacion para hibernate, si uso toplink debo bajar una -->
+      <artifactId>hibernate-jpa-2.1-api</artifactId>
+      <version>1.0.0.Final</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.35</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins> <!--l -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId> <!--esta es la version de java -->
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>
