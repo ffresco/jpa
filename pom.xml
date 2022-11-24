@@ -12,7 +12,7 @@
     <dependency> <!--las dependencias maven las baja de su repositorio https://mvnrepository.com/artifact/ -->
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId> <!--Cuando necesite una biblioteca voy al repository de maven busco el artifactId lo pego aca y listo -->
-      <version>4.3.10.Final</version>
+      <version>5.3.20.Final</version>
     </dependency>
 
     <dependency>
